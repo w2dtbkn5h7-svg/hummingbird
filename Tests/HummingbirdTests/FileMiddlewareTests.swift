@@ -5,6 +5,7 @@
 // See LICENSE.txt for license information
 // SPDX-License-Identifier: Apache-2.0
 //
+#if !os(Windows)
 
 import Foundation
 import HTTPTypes
@@ -636,3 +637,5 @@ struct FileMiddlewareTests {
         }
     }
 }
+
+#endif

@@ -13,6 +13,8 @@ import NIOFileSystem
 import NIOPosix
 import Testing
 
+#if !os(Windows)
+
 struct FileIOTests {
     static func randomBuffer(size: Int) -> ByteBuffer {
         var data = [UInt8](repeating: 0, count: size)
@@ -171,3 +173,5 @@ struct FileIOTests {
         }
     }
 }
+
+#endif
