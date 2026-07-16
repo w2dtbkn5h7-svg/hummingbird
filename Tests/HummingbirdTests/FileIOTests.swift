@@ -6,14 +6,14 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+#if FileSystemSupport
+
 import Foundation
 import Hummingbird
 import HummingbirdTesting
 import NIOFileSystem
 import NIOPosix
 import Testing
-
-#if FileSystemSupport
 
 struct FileIOTests {
     static func randomBuffer(size: Int) -> ByteBuffer {
